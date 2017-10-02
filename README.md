@@ -36,8 +36,8 @@ Then, in a new terminal, go to the project directory and run
 Finally, go to `http://localhost:3000` on your web browser.
 
 # Screenshots
-![Screenshot 1](screenshots/screenshot_0.jpg =250x)
-![Screenshot 2](screenshots/screenshot_1.jpg =250x)
+![Screenshot 1](screenshots/screenshot_0.jpg)
+![Screenshot 2](screenshots/screenshot_1.jpg)
 
 ## Improvements and other ideas
 
