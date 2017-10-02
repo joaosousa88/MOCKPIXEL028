@@ -1,0 +1,10 @@
+.welcome {
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 40px 0 30px;
+}
+
+.welcome-name {
+    font-weight: bold;
+    font-size: 20px;
+}

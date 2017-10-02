@@ -1,0 +1,37 @@
+.Button {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: #d6d6d6;
+    border: 1px solid white;
+    margin-bottom: 10px;
+    position: relative;
+    transition: all 0.5s linear;
+}
+
+.Button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(2%, -50%);
+    height: 28px;
+    width: 28px;
+    background-color: #FFF;
+    left: 0;
+    border-radius: 50%;
+    transition: transform 0.3s, background-color 0.3s, opacity .3s;
+    transform-origin: 50% 50%;
+}
+
+.Button.Active::before {
+    transform: translate(111%, -50%);
+}
+
+.Button.Active {
+    background-color: #21bf8e;
+}
+
+
+.Button.Loading::before {
+    opacity: .6;
+}
