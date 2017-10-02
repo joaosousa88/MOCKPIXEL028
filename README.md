@@ -6,7 +6,7 @@ Can I take your car?
 
 ## Team members
 
-  - Francisco Ferreira 
+  - Francisco Ferreira
   - Joana Melo
   - João Sousa
 
@@ -23,8 +23,8 @@ This is a concept app that is a playground for the provided car endpoints from t
 To build the app please open a terminal window and run the following commands:
 
 ```
-git clone ...
-cd ..
+git clone https://github.com/joaosousa88/MOCKPIXEL028.git
+cd MOCKPIXEL028
 npm i
 node server.js
 ```
@@ -36,10 +36,8 @@ Then, in a new terminal, go to the project directory and run
 Finally, go to `http://localhost:3000` on your web browser.
 
 # Screenshots
-
-![Alt text](https://www.smartusa.com/resources/img/offers/offer-cabriolet.jpg)
-
-Directly embed screenshots or simply place them in a folder (eg: "project-screenshots") along with your code.
+![Screenshot 1](screenshots/screenshot_0.jpg)
+![Screenshot 2](screenshots/screenshot_1.jpg)
 
 ## Improvements and other ideas
 
