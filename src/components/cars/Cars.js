@@ -36,7 +36,7 @@ class Cars extends Component {
 
   render() {
     const { list, active } = this.props;
-    const { carStatus: { doors, immobilizerEngaged: imob, geo } } = this.props;
+    const { carStatus: { doors, immobilizerEngaged: imob, geo, fuelLevel } } = this.props;
     const { isActive, showMap, lockDoorLoading } = this.state;
 
     console.log('doors', doors);
@@ -50,7 +50,7 @@ class Cars extends Component {
                     <div className="Car-info-box">
                         <img className="Car-info-icon" src={ fuel } alt="" />
                         <div className="car-label">
-                          { car.fuel } <span className="car-label-a">km</span>
+                          { fuelLevel } <span className="car-label-a">%</span>
                         </div>
                     </div>
                     <div className="Car-info-box">
@@ -66,10 +66,10 @@ class Cars extends Component {
                         </div>
                     </div>
                     <div className="Car-buttons">
-                        <Button handleClick={ this.blink } text="Dar os piscas" />
-                        <Button active={ imob } handleClick={ imob ? this.disengageImmobilizer : this.engageImmobilizer } text={ `${imob ? 'desactivar' : 'activar'} imobilizador` } />
+                        <Button handleClick={ this.blink } text="Blink" />
+                        <Button active={ imob } handleClick={ imob ? this.disengageImmobilizer : this.engageImmobilizer } text={ `${imob ? 'Disengage' : 'Engage'} immobilizer` } />
                         { doors &&
-                            <Button isLoading={ lockDoorLoading } active={ !doors.locked } handleClick={ doors.locked ? this.unlockDoor : this.lockDoor } text={ `Portas: ${ doors.locked ? ' abrir' : 'fechar' }` } />
+                            <Button isLoading={ lockDoorLoading } active={ !doors.locked } handleClick={ doors.locked ? this.unlockDoor : this.lockDoor } text={ `Doors: ${ doors.locked ? ' open' : 'close' }` } />
                         }
                         {
                             !!geo &&

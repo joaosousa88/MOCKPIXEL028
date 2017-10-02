@@ -33,12 +33,9 @@ class App extends Component {
         this.getStatus();
     }
 
-
-
     getStatus() {
         client.get('/car/status')
         .then((response) => {
-            console.log('got car status', response.data);
             return this.setState({
                 carStatus: response.data,
             })
